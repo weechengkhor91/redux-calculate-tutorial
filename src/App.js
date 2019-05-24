@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from 'react';
+import './App.less';
+import {connect} from 'react-redux'
+import {salaryIncrease, salaryDecrease} from './actions/salaryAction'
 
-function App() {
+
+const App = ({salary, ...props}) => {
+//console.log(props)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Salary</h3>
+        {
+
+              <Fragment>
+                  <div className="amount"><sup className="currency">RM</sup> {salary}</div>
+                  <button onClick={props.salaryIncrease} type="button">Increase</button>
+                  {
+                      salary === 1000 ?   <button type="button" disabled>Decrease</button> :
+                          <button onClick={props.salaryDecrease}  type="button">Decrease</button>
+                  }
+
+              </Fragment>
+        }
+
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+    salary: state.salaryData.salary,
+})
+export default connect(mapStateToProps, {salaryIncrease,salaryDecrease})(App);
