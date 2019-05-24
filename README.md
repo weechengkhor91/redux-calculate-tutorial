@@ -39,13 +39,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Steps for install react redux
 1 npx create-react-app web
+
 2 npm install
+
 3 run eject //package.json
+
 3.1.1 * error run eject - remove package-lock.json
+
 4 edit folder config/webpack.config.js
+
 4.1 find cssRegex
+
 4.1.1  const cssRegex = /\.(css|less)$/
+
 4.1.2 find getStyleLoaders
+
 4.1.3 
     {
         loader: require.resolve('less-loader'),
