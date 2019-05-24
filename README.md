@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3 npm install
 
 //install less file
+
 4 edit folder config/webpack.config.js
 
 4.1 find cssRegex
