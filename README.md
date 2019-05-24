@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Steps for install react redux
-1. npx create-react-app web
+1 npx create-react-app web
 
 2 npm install
 
