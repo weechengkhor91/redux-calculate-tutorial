@@ -1,5 +1,38 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Steps for install react redux
+1 npx create-react-app web
+
+2 npm install
+
+3 run eject //package.json
+
+3.1.1 * error run eject - remove package-lock.json
+
+4 edit folder config/webpack.config.js
+
+4.1 find cssRegex
+
+4.1.1  const cssRegex = /\.(css|less)$/
+
+4.1.2 find getStyleLoaders
+
+4.1.3 
+    {
+        loader: require.resolve('less-loader'),
+        options: { javascriptEnabled: true }, // compiles Less to CSS
+      },
+      
+5 npm i less less-loader
+
+6 npm i redux react-redux redux-thunk
+
+7 * unable to npm start
+
+7.1 * remove package-lock.json and node-modules, reinstall npm install
+
+Notes: * - optional
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,38 +70,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Steps for install react redux
-1 npx create-react-app web
-
-2 npm install
-
-3 run eject //package.json
-
-3.1.1 * error run eject - remove package-lock.json
-
-4 edit folder config/webpack.config.js
-
-4.1 find cssRegex
-
-4.1.1  const cssRegex = /\.(css|less)$/
-
-4.1.2 find getStyleLoaders
-
-4.1.3 
-    {
-        loader: require.resolve('less-loader'),
-        options: { javascriptEnabled: true }, // compiles Less to CSS
-      },
-      
-5 npm i less less-loader
-
-6 npm i redux react-redux redux-thunk
-
-7 * unable to npm start
-
-7.1 * remove package-lock.json and node-modules, reinstall npm install
-
-Notes: * - optional
 
 ## Reference
 https://segmentfault.com/a/1190000015684895
