@@ -15,9 +15,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 4.1 find cssRegex
 
-4.1.1  const cssRegex = /\.(css|less)$/
+4.1.1  const cssRegex = /\.css$/ to const cssRegex = /\.(css|less)$/
 
-4.1.2 find getStyleLoaders
+4.1.2 find getStyleLoaders - add
 
 4.1.3 
     {
@@ -26,6 +26,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
       },
       
 5 npm i less less-loader
+
+5.1 App.css change to App.less
 
 6 npm i redux react-redux redux-thunk
 
