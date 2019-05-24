@@ -5,11 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1.1 cd web
 
-2 npm install
+2 run eject //package.json
 
-3 run eject //package.json
+2.1.1 * error run eject - remove package-lock.json
 
-3.1.1 * error run eject - remove package-lock.json
+3 npm install
 
 4 edit folder config/webpack.config.js
 
