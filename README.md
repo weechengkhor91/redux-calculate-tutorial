@@ -59,10 +59,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
         loader: require.resolve('less-loader'),
         options: { javascriptEnabled: true }, // compiles Less to CSS
       },
+      
 5 npm i less less-loader
+
 6 npm i redux react-redux redux-thunk
+
 7. * unable to npm start
+
 7.1 * remove package-lock.json and node-modules, reinstall npm install
+
 
 ## Reference
 https://segmentfault.com/a/1190000015684895
