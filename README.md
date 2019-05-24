@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Steps for install react redux
 1 npx create-react-app web
 
+1.1 cd web
+
 2 npm install
 
 3 run eject //package.json
