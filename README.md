@@ -68,6 +68,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 7.1 * remove package-lock.json and node-modules, reinstall npm install
 
+Notes: * - optional
 
 ## Reference
 https://segmentfault.com/a/1190000015684895
